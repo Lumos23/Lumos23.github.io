@@ -7,10 +7,9 @@ nav: true
 nav_order: 3
 ---
 
-
-
 ### Service
-I have been a reviewer for FaaCT and NeurIPS conferences. I am a member of the Princeton CS graduate student committee. 
+I have been a reviewer for the ACM FAccT and NeurIPS conferences. I am a member of the Princeton CS graduate student committee. 
+
 
 
 
