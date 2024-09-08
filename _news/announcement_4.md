@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Gave an oral presentation at ICLR 2024 Data Problems in Foundation Models Workshop on our [paper](https://arxiv.org/abs/2404.01099).
+Gave an oral presentation at ICLR 2024 Data Problems in Foundation Models Workshop on our Benign Data Safety [paper](https://arxiv.org/abs/2404.01099).
