@@ -3,6 +3,20 @@
 
 selected = true will show up on the first page
 
+# 2025
+@article{gao2025metadataconditioningaccelerateslanguage,
+      title={Metadata Conditioning Accelerates Language Model Pre-training}, 
+      author={Tianyu Gao and Alexander Wettig and Luxi He and Yihe Dong and Sadhika Malladi and Danqi Chen},
+      year=2025,
+      journal={Preprint},
+      selected={False},
+      arxiv={2501.01956},
+      preview={MeCo_cover.png}, 
+      code={https://github.com/princeton-pli/MeCo},
+      abstract={The vast diversity of styles, domains, and quality levels present in language model pre-training corpora is essential in developing general model capabilities, but efficiently learning and deploying the correct behaviors exemplified in each of these heterogeneous data sources is challenging. To address this, we propose a new method, termed Metadata Conditioning then Cooldown (MeCo), to incorporate additional learning cues during pretraining. MeCo first provides metadata (e.g., URLs like en.wikipedia.org) alongside the text during training and later uses a cooldown phase with only the standard text, thereby enabling the model to function normally even without metadata. MeCo significantly accelerates pre-training across different model scales (600M to 8B parameters) and training sources (C4, RefinedWeb, and DCLM). For instance, a 1.6B language model trained with MeCo matches the downstream task performance of standard pretraining while using 33% less data. Additionally, MeCo enables us to steer language models by conditioning the inference prompt on either real or fabricated metadata that encodes the desired properties of the output: for example, prepending wikipedia.org to reduce harmful generations or factquizmaster.com (fabricated) to improve common knowledge task performance. We also demonstrate that MeCo is compatible with different types of metadata, such as model-generated topics. MeCo is remarkably simple, adds no computational overhead, and demonstrates promise in producing more capable and steerable language models.}
+}
+
+# 2024
 @article{he2024safedataidentifyingbenign,
   title={What is in Your Safe Data? Identifying Benign Data that Breaks Safety}, 
   author={Luxi He* and Mengzhou Xia* and Peter Henderson},
@@ -35,7 +49,7 @@ selected = true will show up on the first page
   title={CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs}, 
   author={Zirui Wang and Mengzhou Xia and Luxi He and Howard Chen and Yitao Liu and Richard Zhu and Kaiqu Liang and Xindi Wu and Haotian Liu and Sadhika Malladi and Alexis Chevalier and Sanjeev Arora and Danqi Chen},
   year=2024,
-  journal      = {Preprint},
+  journal      = {NeurIPS Datasets & Benchmarks},
   selected     = {true},
 	preview		 = {benign_data_safety.png},
   arxiv = {2406.18521},
@@ -45,9 +59,11 @@ selected = true will show up on the first page
   abstract = {Chart understanding plays a pivotal role when applying Multimodal Large Language Models (MLLMs) to real-world tasks such as analyzing scientific papers or financial reports. However, existing datasets often focus on oversimplified and homogeneous charts with template-based questions, leading to an over-optimistic measure of progress. We demonstrate that although open-source models can appear to outperform strong proprietary models on these benchmarks, a simple stress test with slightly different charts or questions can deteriorate performance by up to 34.5%. In this work, we propose CharXiv, a comprehensive evaluation suite involving 2,323 natural, challenging, and diverse charts from arXiv papers. CharXiv includes two types of questions: 1) descriptive questions about examining basic chart elements and 2) reasoning questions that require synthesizing information across complex visual elements in the chart. To ensure quality, all charts and questions are handpicked, curated, and verified by human experts. Our results reveal a substantial, previously underestimated gap between the reasoning skills of the strongest proprietary model (i.e., GPT-4o), which achieves 47.1% accuracy, and the strongest open-source model (i.e., InternVL Chat V1.5), which achieves 29.2%. All models lag far behind human performance of 80.5%, underscoring weaknesses in the chart understanding capabilities of existing MLLMs. We hope CharXiv facilitates future research on MLLM chart understanding by providing a more realistic and faithful measure of progress.}
 }
 
+
+# 2023
 @inproceedings{NEURIPS2023_55a49718,
  author = {Wang, Hao and He, Luxi and Gao, Rui and Calmon, Flavio},
- booktitle = {Advances in Neural Information Processing Systems <span style="font-weight:bold; color:red;">(Spotlight)</span>},
+ booktitle = {NeurIPS <span style="font-weight:bold; color:red;">(Spotlight)</span>},
  editor = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
  pages = {27040--27062},
  publisher = {Curran Associates, Inc.},

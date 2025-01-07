@@ -8,7 +8,11 @@ nav_order: 3
 ---
 
 ### Service
-I have been a reviewer for the ACM FAccT and NeurIPS conferences. I am a member of the Princeton CS graduate student committee. 
+I co-run the Princeton AI Alignment and Safety Seminar ([PASS](https://evaleval.github.io/accepted_papers/EvalEval_24_He.pdf)). You should check out talk recordings from our amazing speakers [here](https://www.youtube.com/@PrincetonPLI)! At Princeton, I am also a member of the CS department's graduate student committee. 
+
+
+I have been a reviewer for conferences like NeurIPS, ICLR, ICML, and ACM FAccT. 
+
 
 
 
