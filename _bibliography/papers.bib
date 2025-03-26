@@ -4,17 +4,8 @@
 selected = true will show up on the first page
 
 # 2025
-@article{gao2025metadataconditioningaccelerateslanguage,
-      title={Metadata Conditioning Accelerates Language Model Pre-training}, 
-      author={Tianyu Gao and Alexander Wettig and Luxi He and Yihe Dong and Sadhika Malladi and Danqi Chen},
-      year=2025,
-      journal={Preprint},
-      selected={False},
-      arxiv={2501.01956},
-      preview={MeCo_cover.png}, 
-      code={https://github.com/princeton-pli/MeCo},
-      abstract={The vast diversity of styles, domains, and quality levels present in language model pre-training corpora is essential in developing general model capabilities, but efficiently learning and deploying the correct behaviors exemplified in each of these heterogeneous data sources is challenging. To address this, we propose a new method, termed Metadata Conditioning then Cooldown (MeCo), to incorporate additional learning cues during pretraining. MeCo first provides metadata (e.g., URLs like en.wikipedia.org) alongside the text during training and later uses a cooldown phase with only the standard text, thereby enabling the model to function normally even without metadata. MeCo significantly accelerates pre-training across different model scales (600M to 8B parameters) and training sources (C4, RefinedWeb, and DCLM). For instance, a 1.6B language model trained with MeCo matches the downstream task performance of standard pretraining while using 33% less data. Additionally, MeCo enables us to steer language models by conditioning the inference prompt on either real or fabricated metadata that encodes the desired properties of the output: for example, prepending wikipedia.org to reduce harmful generations or factquizmaster.com (fabricated) to improve common knowledge task performance. We also demonstrate that MeCo is compatible with different types of metadata, such as model-generated topics. MeCo is remarkably simple, adds no computational overhead, and demonstrates promise in producing more capable and steerable language models.}
-}
+
+
 
 # 2024
 @article{he2024safedataidentifyingbenign,
@@ -33,7 +24,7 @@ selected = true will show up on the first page
 @article{he2024fantasticcopyrightedbeastsnot,
   title={Fantastic Copyrighted Beasts and How (Not) to Generate Them}, 
   author={Luxi He* and Yangsibo Huang* and Weijia Shi* and Tinghao Xie and Haotian Liu and Yue Wang and Luke Zettlemoyer and Chiyuan Zhang and Danqi Chen and Peter Henderson},
-  year=2024,
+  year=2025,
   journal      = {ICLR 2025, ICML GenLaw <span style="font-weight:bold; color:red;">(Spotlight)</span>},
   selected     = {true},
 	preview		 = {copycat_cover.png},
@@ -41,6 +32,29 @@ selected = true will show up on the first page
   code = {https://github.com/princeton-nlp/CopyCat},
   website = {https://copycat-eval.github.io/},
   abstract = {Recent studies show that image and video generation models can be prompted to reproduce copyrighted content from their training data, raising serious legal concerns around copyright infringement. Copyrighted characters, in particular, pose a difficult challenge for image generation services, with at least one lawsuit already awarding damages based on the generation of these characters. Yet, little research has empirically examined this issue. We conduct a systematic evaluation to fill this gap. First, we build CopyCat, an evaluation suite consisting of diverse copyrighted characters and a novel evaluation pipeline. Our evaluation considers both the detection of similarity to copyrighted characters and generated image's consistency with user input. Our evaluation systematically shows that both image and video generation models can still generate characters even if characters' names are not explicitly mentioned in the prompt, sometimes with only two generic keywords (e.g., prompting with "videogame, plumber" consistently generates Nintendo's Mario character). We then introduce techniques to semi-automatically identify such keywords or descriptions that trigger character generation. Using our evaluation suite, we study runtime mitigation strategies, including both existing methods and new strategies we propose. Our findings reveal that commonly employed strategies, such as prompt rewriting in the DALL-E system, are not sufficient as standalone guardrails. These strategies must be coupled with other approaches, like negative prompting, to effectively reduce the unintended generation of copyrighted characters. Our work provides empirical grounding to the discussion of copyright mitigation strategies and offers actionable insights for model deployers actively implementing them.}
+}
+
+@article{gao2025metadataconditioningaccelerateslanguage,
+      title={Metadata Conditioning Accelerates Language Model Pre-training}, 
+      author={Tianyu Gao and Alexander Wettig and Luxi He and Yihe Dong and Sadhika Malladi and Danqi Chen},
+      year=2025,
+      journal={Preprint},
+      selected={true},
+      arxiv={2501.01956},
+      preview={MeCo_cover.png}, 
+      code={https://github.com/princeton-pli/MeCo},
+      abstract={The vast diversity of styles, domains, and quality levels present in language model pre-training corpora is essential in developing general model capabilities, but efficiently learning and deploying the correct behaviors exemplified in each of these heterogeneous data sources is challenging. To address this, we propose a new method, termed Metadata Conditioning then Cooldown (MeCo), to incorporate additional learning cues during pretraining. MeCo first provides metadata (e.g., URLs like en.wikipedia.org) alongside the text during training and later uses a cooldown phase with only the standard text, thereby enabling the model to function normally even without metadata. MeCo significantly accelerates pre-training across different model scales (600M to 8B parameters) and training sources (C4, RefinedWeb, and DCLM). For instance, a 1.6B language model trained with MeCo matches the downstream task performance of standard pretraining while using 33% less data. Additionally, MeCo enables us to steer language models by conditioning the inference prompt on either real or fabricated metadata that encodes the desired properties of the output: for example, prepending wikipedia.org to reduce harmful generations or factquizmaster.com (fabricated) to improve common knowledge task performance. We also demonstrate that MeCo is compatible with different types of metadata, such as model-generated topics. MeCo is remarkably simple, adds no computational overhead, and demonstrates promise in producing more capable and steerable language models.}
+}
+
+@article{he2025deploymentendtoendaudiolanguage,
+      title={The Deployment of End-to-End Audio Language Models Should Take into Account the Principle of Least Privilege}, 
+      author={Luxi He and Xiangyu Qi and Michel Liao and Inyoung Cheong and Prateek Mittal and Danqi Chen and Peter Henderson},
+      year=2025,
+      journal={Preprint},
+      selected={false},
+      arxiv={2503.16833},
+      preview={audiolm_illustration.png}, 
+      abstract={We are at a turning point for language models that accept audio input. The latest end-to-end audio language models (Audio LMs) process speech directly instead of relying on a separate transcription step. This shift preserves detailed information, such as intonation or the presence of multiple speakers, that would otherwise be lost in transcription. However, it also introduces new safety risks, including the potential misuse of speaker identity cues and other sensitive vocal attributes, which could have legal implications. In this position paper, we urge a closer examination of how these models are built and deployed. We argue that the principle of least privilege should guide decisions on whether to deploy cascaded or end-to-end models. Specifically, evaluations should assess (1) whether end-to-end modeling is necessary for a given application; and (2), the appropriate scope of information access. Finally, We highlight related gaps in current audio LM benchmarks and identify key open research questions, both technical and policy-related, that must be addressed to enable the responsible deployment of end-to-end Audio LMs.}
 }
 
 
