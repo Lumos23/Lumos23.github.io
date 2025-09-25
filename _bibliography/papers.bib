@@ -4,22 +4,31 @@
 selected = true will show up on the first page
 
 # 2025
-
-
-
-# 2024
-@article{he2024safedataidentifyingbenign,
-  title={What is in Your Safe Data? Identifying Benign Data that Breaks Safety}, 
-  author={Luxi He* and Mengzhou Xia* and Peter Henderson},
-  year=2024,
-  journal      = {Conference on Language Modeling (COLM), ICLR Data Problems in Foundation Model <span style="font-weight:bold; color:red;">(Best Paper)</span>},
-  selected     = {true},
-	preview		 = {benign_data_safety.png},
-  arxiv = {2404.01099},
-  code = {https://github.com/princeton-nlp/benign-data-breaks-safety},
-  slides = {ICLR_data_selection_safety_final.pdf},
-  abstract = {Current Large Language Models (LLMs), even those tuned for safety and alignment, are susceptible to jailbreaking. Some have found that just further fine-tuning an aligned model with benign data (i.e., data without harmful content) surprisingly leads to substantial degradation in safety. We delve into the data-centric aspects of why benign fine-tuning inadvertently contributes to jailbreaking. First, we represent fine-tuning data through two lenses: representation and gradient spaces. Furthermore, we propose a bi-directional anchoring method that prioritizes data points that are close to harmful examples and distant from benign ones. By doing so, our approach effectively identifies subsets of benign data that are more likely to degrade the model's safety after fine-tuning. Training on just 100 of these seemingly benign datapoints can lead to the fine-tuned model affirmatively responding to > 70% of tested harmful requests, compared to < 20% after fine-tuning on randomly selected data. We further find that selected data are often in the form of lists and bullet points, or math questions.}
+@article{he2025modelhearsyouaudio,
+      title={Statutory Construction and Interpretation for Artificial Intelligence}, 
+      author={Luxi He* and Nimra Nadeem* and Michel Liao and Howard Chen and Danqi Chen and Mariano-Florentino Cuéllar and Peter Henderson},
+      year=2025,
+      journal={Preprint},
+      selected={true},
+      arxiv={2509.01186},
+      code = {https://github.com/princeton-polaris-lab/statutory_interpretation_for_ai/tree/main#},
+      website = {https://www.polarislab.org/#/blog/statutory-construction-ai},
+      preview={CAI_cover.png}, 
+      abstract={AI systems are increasingly governed by natural language principles, yet a key challenge arising from reliance on language remains underexplored: interpretive ambiguity. As in legal systems, ambiguity arises both from how these principles are written and how they are applied. But while legal systems use institutional safeguards to manage such ambiguity, such as transparent appellate review policing interpretive constraints, AI alignment pipelines offer no comparable protections. Different interpretations of the same rule can lead to inconsistent or unstable model behavior. Drawing on legal theory, we identify key gaps in current alignment pipelines by examining how legal systems constrain ambiguity at both the rule creation and rule application steps. We then propose a computational framework that mirrors two legal mechanisms: (1) a rule refinement pipeline that minimizes interpretive disagreement by revising ambiguous rules (analogous to agency rulemaking or iterative legislative action), and (2) prompt-based interpretive constraints that reduce inconsistency in rule application (analogous to legal canons that guide judicial discretion). We evaluate our framework on a 5,000-scenario subset of the WildChat dataset and show that both interventions significantly improve judgment consistency across a panel of reasonable interpreters. Our approach offers a first step toward systematically managing interpretive ambiguity, an essential step for building more robust, law-following AI systems.}
 }
+
+
+@article{he2025modelhearsyouaudio,
+      title={The Model Hears You: Audio Language Model Deployments Should Consider the Principle of Least Privilege}, 
+      author={Luxi He* and Xiangyu Qi* and Michel Liao and Inyoung Cheong and Prateek Mittal and Danqi Chen and Peter Henderson},
+      year=2025,
+      journal={AIES},
+      selected={true},
+      arxiv={2503.16833},
+      preview={audiolm_illustration.png}, 
+      abstract={The latest Audio Language Models (Audio LMs) process speech directly instead of relying on a separate transcription step. This shift preserves detailed information, such as intonation or the presence of multiple speakers, that would otherwise be lost in transcription. However, it also introduces new safety risks, including the potential misuse of speaker identity cues and other sensitive vocal attributes, which could have legal implications. In this paper, we urge a closer examination of how these models are built and deployed. Our experiments show that end-to-end modeling, compared with cascaded pipelines, creates socio-technical safety risks such as identity inference, biased decision-making, and emotion detection. This raises concerns about whether Audio LMs store voiceprints and function in ways that create uncertainty under existing legal regimes. We then argue that the Principle of Least Privilege should be considered to guide the development and deployment of these models. Specifically, evaluations should assess (1) the privacy and safety risks associated with end-to-end modeling; and (2) the appropriate scope of information access. Finally, we highlight related gaps in current audio LM benchmarks and identify key open research questions, both technical and policy-related, that must be addressed to enable the responsible deployment of end-to-end Audio LMs.}
+}
+
 
 @article{he2024fantasticcopyrightedbeastsnot,
   title={Fantastic Copyrighted Beasts and How (Not) to Generate Them}, 
@@ -34,11 +43,12 @@ selected = true will show up on the first page
   abstract = {Recent studies show that image and video generation models can be prompted to reproduce copyrighted content from their training data, raising serious legal concerns around copyright infringement. Copyrighted characters, in particular, pose a difficult challenge for image generation services, with at least one lawsuit already awarding damages based on the generation of these characters. Yet, little research has empirically examined this issue. We conduct a systematic evaluation to fill this gap. First, we build CopyCat, an evaluation suite consisting of diverse copyrighted characters and a novel evaluation pipeline. Our evaluation considers both the detection of similarity to copyrighted characters and generated image's consistency with user input. Our evaluation systematically shows that both image and video generation models can still generate characters even if characters' names are not explicitly mentioned in the prompt, sometimes with only two generic keywords (e.g., prompting with "videogame, plumber" consistently generates Nintendo's Mario character). We then introduce techniques to semi-automatically identify such keywords or descriptions that trigger character generation. Using our evaluation suite, we study runtime mitigation strategies, including both existing methods and new strategies we propose. Our findings reveal that commonly employed strategies, such as prompt rewriting in the DALL-E system, are not sufficient as standalone guardrails. These strategies must be coupled with other approaches, like negative prompting, to effectively reduce the unintended generation of copyrighted characters. Our work provides empirical grounding to the discussion of copyright mitigation strategies and offers actionable insights for model deployers actively implementing them.}
 }
 
+
 @article{gao2025metadataconditioningaccelerateslanguage,
       title={Metadata Conditioning Accelerates Language Model Pre-training}, 
       author={Tianyu Gao and Alexander Wettig and Luxi He and Yihe Dong and Sadhika Malladi and Danqi Chen},
       year=2025,
-      journal={Preprint},
+      journal={ICML},
       selected={true},
       arxiv={2501.01956},
       preview={MeCo_cover.png}, 
@@ -46,15 +56,44 @@ selected = true will show up on the first page
       abstract={The vast diversity of styles, domains, and quality levels present in language model pre-training corpora is essential in developing general model capabilities, but efficiently learning and deploying the correct behaviors exemplified in each of these heterogeneous data sources is challenging. To address this, we propose a new method, termed Metadata Conditioning then Cooldown (MeCo), to incorporate additional learning cues during pretraining. MeCo first provides metadata (e.g., URLs like en.wikipedia.org) alongside the text during training and later uses a cooldown phase with only the standard text, thereby enabling the model to function normally even without metadata. MeCo significantly accelerates pre-training across different model scales (600M to 8B parameters) and training sources (C4, RefinedWeb, and DCLM). For instance, a 1.6B language model trained with MeCo matches the downstream task performance of standard pretraining while using 33% less data. Additionally, MeCo enables us to steer language models by conditioning the inference prompt on either real or fabricated metadata that encodes the desired properties of the output: for example, prepending wikipedia.org to reduce harmful generations or factquizmaster.com (fabricated) to improve common knowledge task performance. We also demonstrate that MeCo is compatible with different types of metadata, such as model-generated topics. MeCo is remarkably simple, adds no computational overhead, and demonstrates promise in producing more capable and steerable language models.}
 }
 
-@article{he2025deploymentendtoendaudiolanguage,
-      title={The Deployment of End-to-End Audio Language Models Should Take into Account the Principle of Least Privilege}, 
-      author={Luxi He and Xiangyu Qi and Michel Liao and Inyoung Cheong and Prateek Mittal and Danqi Chen and Peter Henderson},
+@article{qi2024evaluatingdurabilitysafeguardsopenweight,
+      title={On Evaluating the Durability of Safeguards for Open-Weight LLMs
+g}, 
+      author={Xiangyu Qi and Boyi Wei and Nicholas Carlini and Yangsibo Huang and Tinghao Xie and Luxi He and Matthew Jagielski and Milad Nasr and Prateek Mittal and Peter Henderson},
       year=2025,
-      journal={Preprint},
+      journal={ICLR},
       selected={false},
-      arxiv={2503.16833},
-      preview={audiolm_illustration.png}, 
-      abstract={We are at a turning point for language models that accept audio input. The latest end-to-end audio language models (Audio LMs) process speech directly instead of relying on a separate transcription step. This shift preserves detailed information, such as intonation or the presence of multiple speakers, that would otherwise be lost in transcription. However, it also introduces new safety risks, including the potential misuse of speaker identity cues and other sensitive vocal attributes, which could have legal implications. In this position paper, we urge a closer examination of how these models are built and deployed. We argue that the principle of least privilege should guide decisions on whether to deploy cascaded or end-to-end models. Specifically, evaluations should assess (1) whether end-to-end modeling is necessary for a given application; and (2), the appropriate scope of information access. Finally, We highlight related gaps in current audio LM benchmarks and identify key open research questions, both technical and policy-related, that must be addressed to enable the responsible deployment of end-to-end Audio LMs.}
+      arxiv={2412.07097},
+      preview={safeguard-durability-cover.png}, 
+      abstract={Stakeholders -- from model developers to policymakers -- seek to minimize the dual-use risks of large language models (LLMs). An open challenge to this goal is whether technical safeguards can impede the misuse of LLMs, even when models are customizable via fine-tuning or when model weights are fully open. In response, several recent studies have proposed methods to produce durable LLM safeguards for open-weight LLMs that can withstand adversarial modifications of the model's weights via fine-tuning. This holds the promise of raising adversaries' costs even under strong threat models where adversaries can directly fine-tune model weights. However, in this paper, we urge for more careful characterization of the limits of these approaches. Through several case studies, we demonstrate that even evaluating these defenses is exceedingly difficult and can easily mislead audiences into thinking that safeguards are more durable than they really are. We draw lessons from the evaluation pitfalls that we identify and suggest future research carefully cabin claims to more constrained, well-defined, and rigorously examined threat models, which can provide more useful and candid assessments to stakeholders.}
+}
+
+
+@article{xie2025sorrybenchsystematicallyevaluatinglarge,
+      title={SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal}, 
+      author={Tinghao Xie and Xiangyu Qi and Yi Zeng and Yangsibo Huang and Udari Madhushani Sehwag and Kaixuan Huang and Luxi He and Boyi Wei and Dacheng Li and Ying Sheng and Ruoxi Jia and Bo Li and Kai Li and Danqi Chen and Peter Henderson and Prateek Mittal},
+      year=2025,
+      journal={ICLR},
+      selected={false}, 
+      arxiv={2406.14598},
+      preview={sorry-bench-cover.png}, 
+      website={https://sorry-bench.github.io/},
+      abstract={Evaluating aligned large language models' (LLMs) ability to recognize and reject unsafe user requests is crucial for safe, policy-compliant deployments. Existing evaluation efforts, however, face three limitations that we address with SORRY-Bench, our proposed benchmark. First, existing methods often use coarse-grained taxonomies of unsafe topics, and are over-representing some fine-grained topics. For example, among the ten existing datasets that we evaluated, tests for refusals of self-harm instructions are over 3x less represented than tests for fraudulent activities. SORRY-Bench improves on this by using a fine-grained taxonomy of 44 potentially unsafe topics, and 440 class-balanced unsafe instructions, compiled through human-in-the-loop methods. Second, linguistic characteristics and formatting of prompts are often overlooked, like different languages, dialects, and more -- which are only implicitly considered in many evaluations. We supplement SORRY-Bench with 20 diverse linguistic augmentations to systematically examine these effects. Third, existing evaluations rely on large LLMs (e.g., GPT-4) for evaluation, which can be computationally expensive. We investigate design choices for creating a fast, accurate automated safety evaluator. By collecting 7K+ human annotations and conducting a meta-evaluation of diverse LLM-as-a-judge designs, we show that fine-tuned 7B LLMs can achieve accuracy comparable to GPT-4 scale LLMs, with lower computational cost. Putting these together, we evaluate over 50 proprietary and open-weight LLMs on SORRY-Bench, analyzing their distinctive safety refusal behaviors. We hope our effort provides a building block for systematic evaluations of LLMs' safety refusal capabilities, in a balanced, granular, and efficient manner.}
+}
+
+
+# 2024
+@article{he2024safedataidentifyingbenign,
+  title={What is in Your Safe Data? Identifying Benign Data that Breaks Safety}, 
+  author={Luxi He* and Mengzhou Xia* and Peter Henderson},
+  year=2024,
+  journal      = {Conference on Language Modeling (COLM), ICLR Data Problems in Foundation Model <span style="font-weight:bold; color:red;">(Best Paper)</span>},
+  selected     = {true},
+	preview		 = {benign_data_safety.png},
+  arxiv = {2404.01099},
+  code = {https://github.com/princeton-nlp/benign-data-breaks-safety},
+  slides = {ICLR_data_selection_safety_final.pdf},
+  abstract = {Current Large Language Models (LLMs), even those tuned for safety and alignment, are susceptible to jailbreaking. Some have found that just further fine-tuning an aligned model with benign data (i.e., data without harmful content) surprisingly leads to substantial degradation in safety. We delve into the data-centric aspects of why benign fine-tuning inadvertently contributes to jailbreaking. First, we represent fine-tuning data through two lenses: representation and gradient spaces. Furthermore, we propose a bi-directional anchoring method that prioritizes data points that are close to harmful examples and distant from benign ones. By doing so, our approach effectively identifies subsets of benign data that are more likely to degrade the model's safety after fine-tuning. Training on just 100 of these seemingly benign datapoints can lead to the fine-tuned model affirmatively responding to > 70% of tested harmful requests, compared to < 20% after fine-tuning on randomly selected data. We further find that selected data are often in the form of lists and bullet points, or math questions.}
 }
 
 

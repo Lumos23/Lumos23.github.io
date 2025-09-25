@@ -6,14 +6,14 @@ title: misc.
 nav: true
 nav_order: 3
 ---
-
 ### Service
-I co-run the Princeton AI Alignment and Safety Seminar ([PASS](https://pli.princeton.edu/events/princeton-ai-alignment-and-safety-seminar)). You should check out talk recordings from our amazing speakers [here](https://www.youtube.com/@PrincetonPLI)! At Princeton, I am also a member of the CS department's graduate student committee. 
+I co-run the Princeton AI Alignment and Safety Seminar ([PASS](https://pli.princeton.edu/events/princeton-ai-alignment-and-safety-seminar)). Check out talk recordings from our amazing speakers [here](https://www.youtube.com/@PrincetonPLI) :) 
+
+I have been a reviewer for conferences like NeurIPS, ICLR, ICML, COLM, and ACM FAccT. 
 
 
-I have been a reviewer for conferences like NeurIPS, ICLR, ICML, and ACM FAccT. 
-
-
+### Fun 
+At Princeton, I am a dancer in the KoKo Pops Dance Company and sing Soprano at the Acapella group VTone. I love going into NYC for seeing musicals and visting museums. I'm always looking forward to my next travel and food adventure 💫
 
 
 
