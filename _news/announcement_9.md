@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
- Will be giving an oral presentation of our AudioLM evaluation [paper](https://arxiv.org/abs/2503.16833) at AIES 2025. Excited to meet more AI-law-policy interdisciplinary folks. See you in Madrid!
+ Gave an oral presentation of our AudioLM evaluation [paper](https://arxiv.org/abs/2503.16833) at AIES 2025. 
