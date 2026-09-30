@@ -25,7 +25,7 @@ I am currently a Research Fellow at Anthropic, and I was previously a Student Re
 
 Before Princeton, I obtained my Bachelor's degree from Harvard with Highest Honors in Computer Science & Mathematics and a concurrent Master's in Applied Math. 
 
-Outside of research, I'm a singer, dancer, photographer, and amateur food blogger. 
+Outside of research, I'm a singer, dancer, traveler, and amateur food blogger. 
 
 **Email:** luxihe at princeton.edu
 

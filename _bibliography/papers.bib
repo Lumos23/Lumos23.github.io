@@ -4,6 +4,8 @@
 selected = true will show up on the first page
 
 # 2026
+
+
 @article{he2025statutoryconstructioninterpretationartificial,
       title={Statutory Construction and Interpretation for Artificial Intelligence}, 
       author={Luxi He* and Nimra Nadeem* and Michel Liao and Howard Chen and Danqi Chen and Mariano-Florentino Cuellar and Peter Henderson},
@@ -16,6 +18,32 @@ selected = true will show up on the first page
       preview={CAI_cover.png}, 
       abstract={AI systems are increasingly governed by natural language principles, yet a key challenge arising from reliance on language remains underexplored: interpretive ambiguity. As in legal systems, ambiguity arises both from how these principles are written and how they are applied. But while legal systems use institutional safeguards to manage such ambiguity, such as transparent appellate review policing interpretive constraints, AI alignment pipelines offer no comparable protections. Different interpretations of the same rule can lead to inconsistent or unstable model behavior. Drawing on legal theory, we identify key gaps in current alignment pipelines by examining how legal systems constrain ambiguity at both the rule creation and rule application steps. We then propose a computational framework that mirrors two legal mechanisms: (1) a rule refinement pipeline that minimizes interpretive disagreement by revising ambiguous rules (analogous to agency rulemaking or iterative legislative action), and (2) prompt-based interpretive constraints that reduce inconsistency in rule application (analogous to legal canons that guide judicial discretion). We evaluate our framework on a 5,000-scenario subset of the WildChat dataset and show that both interventions significantly improve judgment consistency across a panel of reasonable interpreters. Our approach offers a first step toward systematically managing interpretive ambiguity, an essential step for building more robust, law-following AI systems.}
 }
+
+@article{he2026goneforgood,
+      title={Gone for Good? Measuring and Strengthening Misaligned Behaviors Suppression},
+      author={Luxi He* and Pengcheng Jiang* and Jifan Zhang and Jiawei Han and Danqi Chen},
+      year=2026,
+      journal={NeurIPS},
+      note={Release coming soon},
+      selected={true},
+      preview={pearl_overview.png},
+      abstract={Undesired model behaviors can emerge or re-emerge at any stage of training. Once observed, how effectively can we suppress them? To study this question, we first construct two model organisms—language models deliberately trained to exhibit a specific misalignment—that differ in what triggers the behavior. The narrow-trigger organism misbehaves only when the prompt contains a specific cue: it cheats on multiple-choice questions by copying an injected hint, and behaves normally otherwise. The broad-trigger organism has no such cue: it gives misaligned responses across a wide range of open-ended prompts. We then formalize post-hoc behavioral suppression and evaluate methods along three criteria: immediate suppression of the target behavior, durability under further training, and preservation of general capability. We compare standard methods—SFT, GRPO, and gradient-ascent unlearning—along these dimensions while controlling the number of gradient updates. Building on prior work on alignment shallowness, we hypothesize that more durable suppression requires the ability to recover from a wider range of misalignment states. We introduce Prefix-Expanded Adversarial Reinforcement Learning (PEARL), a GRPO variant that augments rollouts with continuations from intermediate states sampled along cached organism trajectories. Across both organism settings and two model families (Qwen3-4B, GPT-OSS-20B), PEARL achieves low exploit rates while preserving task accuracy, and yields low reactivation rates under both targeted and benign capability fine-tuning. It obtains the greatest benefit over other baselines when the undesirable behavior is broad and cannot be addressed through targeted SFT. Together, our framework and method offer a step toward more durable post-hoc removal of undesired behaviors.}
+}
+
+
+@article{liao2026aligningjudgemodels,
+      title={Aligning Judge Models to be Logically Consistent Multi-Rule Interpreters},
+      author={Michel Liao and Nimra Nadeem and Luxi He and Peter Henderson},
+      year=2026,
+      journal={NeurIPS AI4Good Workshop <span style="font-weight:bold; font-style:italic; color:red;">(Oral)</span>},
+      note={Release coming soon},
+      selected={true},
+      preview={inconsistent_rates.png},
+      abstract={Technical governance of AI models will soon require training them to follow thousands of rules. Even making agents follow the law requires them to reason about legal codes from hundreds of countries. However, as we show in this work, presenting an entire ruleset to one judge model—rather than having separate judges interpret one rule each—changes the way many models interpret the requirements. When evaluating the ruleset as a whole, a judge model can reach a conclusion that conflicts with its rule-by-rule judgments. Such inconsistencies could cause misalignment by leading a model to treat a hard rule as a soft constraint. For example, we find that when a rule banning pursuing non-specified objectives appears in a larger ruleset, judge models are less likely to deem it violated. As in human statutory interpretation, surrounding rules shape models' interpretations. We argue, however, that these multi-rule interactions must be measured and handled explicitly. We examine several methods for doing so, including prompting, iterative rule refinement, and consistency training. We hope this work helps establish standards for multi-rule alignment and prevents undetected shifts in interpretation from causing downstream alignment failures.}
+}
+
+
+
 
 @article{qi2026dataprophetdemystifyingsupervisiondata,
       title={DataProphet: Demystifying Supervision Data Generalization in Multimodal LLMs}, 

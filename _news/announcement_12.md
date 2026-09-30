@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper on Measuring and Strengthening Behavioral Suppression in Language Models got accepted at NeurIPS! More release coming soon and looking forward to chatting more about model behavior!
+Our paper on measuring and suppressing misaligned model behaviors accepted to NeurIPS! Our work making LLM judges more consistent multi-rule interpreters accepted for Oral Presentation at NeurIPS AI4GOOD workshop. More releases coming soon!
