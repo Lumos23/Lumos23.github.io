@@ -355,6 +355,7 @@ filtered_bibtex_keywords:
     bibtex_show,
     blog,
     code,
+    hide_year,
     html,
     pdf,
     poster,
